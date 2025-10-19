@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head><!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EVASH | Brand History</title>
+<title>EVASH | Brand & History</title>
 <style>
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -23,14 +21,12 @@ header {
 header h1 {
     margin: 10px 0;
     font-size: 2rem;
-    animation: pulse 2s infinite;
 }
 header p.slogan {
     margin: 5px 0 0 0;
     font-size: 1.2rem;
     font-style: italic;
     color: #ffd700;
-    animation: glow 2s infinite alternate;
 }
 header .lang-toggle {
     margin-top: 10px;
@@ -49,22 +45,16 @@ header .lang-toggle button {
 header .lang-toggle button:hover {
     transform: scale(1.1);
 }
-@keyframes pulse {
-    0% { color: #fff; }
-    50% { color: #ffd700; }
-    100% { color: #fff; }
-}
-@keyframes glow {
-    0% { text-shadow: 0 0 5px #ffd700; }
-    100% { text-shadow: 0 0 20px #ffd700; }
-}
-section.brand, section.events {
+section {
     max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
 }
-section.brand ul {
-    margin: 5px 0 15px 20px;
+.brand p, .brand ul, .event p {
+    margin: 5px 0;
+}
+.brand ul {
+    margin-left: 20px;
 }
 .event {
     background: #fff;
@@ -76,9 +66,6 @@ section.brand ul {
 .event h3 {
     margin: 0 0 5px 0;
     color: #0d3b66;
-}
-.event p {
-    margin: 3px 0;
 }
 .hidden { display: none; }
 </style>
@@ -87,162 +74,66 @@ section.brand ul {
 
 <header>
     <h1>EVASH | 益华世科技</h1>
-    <p class="slogan">Always Remember P</p>
+    <p class="slogan">EVASH — Always Remember</p>
     <div class="lang-toggle">
         <button onclick="showLang('en')">English</button>
         <button onclick="showLang('cn')">中文</button>
     </div>
 </header>
 
-<!-- English Brand Introduction -->
+<!-- English Brand Story -->
 <section class="brand" id="brand-en">
-    <p><strong>EVASH</strong>, also known as 益华世科技 in China, originates from the USA with over 30 years of history, and is a leading brand for high-performance storage solutions.</p>
-    <p>Brand origin and meaning:</p>
-    <ul>
-        <li><strong>EVASH</strong>: stands for "Embedded Value & Advanced Storage Hardware", symbolizing innovative memory technology and high reliability.</li>
-        <li>When entering China, the brand was named <strong>益华世</strong>:
-            <ul>
-                <li><strong>Yi (益)</strong>: creating value and benefits for customers and partners</li>
-                <li><strong>Hua (华)</strong>: representing excellence and Chinese heritage</li>
-                <li><strong>Shi (世)</strong>: symbolizing global vision and long-term reliability</li>
-            </ul>
-        </li>
-        <li>Combined with <strong>UWL EVASH / 益华世</strong>, it highlights global brand identity with local trust.</li>
-    </ul>
-    <p>EVASH is easy to remember, representing innovation, reliability, and high-performance memory solutions.</p>
+    <p><strong>E·V·ASH →</strong> E for Energy / V for Vision / ASH for Future from Fire</p>
+    <p><strong>EVASH — Energy. Vision. From Ash, Rebirth.</strong></p>
+    <p>EVASH-Always Remember.</p>
+    <p>EVASH means memory evolution — we make every bit reliable. You’ll always remember EVASH — and EVASH always remembers you.</p>
+    <h3>Brand Story</h3>
+    <p><strong>From Ash to EVASH:</strong> EVASH stands for evolution and reliability in memory technology — from innovation to every byte remembered. EVASH originates from 'Evolving from Ashes' — meaning a storage brand continuously evolving in the chip industry. We provide reliable, low-power, long-life EEPROM solutions to make every bit memorable.</p>
+    <p><strong>益华世:</strong> “Yi” for benefiting technology, “Hua” for excellence in technology, “Shi” for global win-win. Empowering the World with Smart Memory. EVASH from China empowers reliable memory with human value.</p>
 </section>
 
-<!-- Chinese Brand Introduction -->
+<!-- Chinese Brand Story -->
 <section class="brand hidden" id="brand-cn">
-    <p><strong>EVASH 益华世科技</strong>，源自美国，已有超过30年的历史，是高性能存储解决方案的领先品牌。</p>
-    <p>品牌名称来源与寓意：</p>
-    <ul>
-        <li><strong>EVASH</strong>：来源于“Embedded Value & Advanced Storage Hardware”，象征创新存储技术与高可靠性能。</li>
-        <li>进入中国市场后，取名为 <strong>益华世</strong>：
-            <ul>
-                <li><strong>益</strong>：为客户和合作伙伴创造价值与利益</li>
-                <li><strong>华</strong>：代表卓越品质与中国背景</li>
-                <li><strong>世</strong>：象征全球视野和长期可靠性</li>
-            </ul>
-        </li>
-        <li>结合 <strong>UWL 益华世</strong>，体现全球化品牌标识与本土化信任感。</li>
-    </ul>
-    <p>EVASH 简洁易记，代表创新、可靠与高性能存储芯片解决方案。</p>
+    <p><strong>E·V·ASH →</strong> E代表Energy（能量） / V代表Vision（愿景） / ASH象征从火焰中重生的未来</p>
+    <p><strong>EVASH — 从技术的火焰中重生未来</strong></p>
+    <p>EVASH-Always Remember</p>
+    <p>EVASH代表存储进化 — 我们让每一个比特都可靠。你会记住EVASH，而EVASH也会记住你。</p>
+    <h3>品牌故事</h3>
+    <p><strong>From Ash to EVASH:</strong> EVASH源自“Evolving from Ashes”，意为在芯片行业更新换代中持续进化的存储品牌。我们致力于提供可靠、低功耗、高寿命的EEPROM解决方案，让每一个比特都值得被记住。</p>
+    <p><strong>益华世:</strong> 益技术之益，华科技之华，世共赢之世。益于科技，华耀于世。（Empowering the World with Smart Memory）益华世科技（EVASH）源自中国，致力于让每一位客户在可靠存储中，感受到科技的温度与价值。</p>
 </section>
-
-<section class="events">
 
 <!-- English Events -->
-<div id="events-en">
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Founded: By engineers from Intel and Cypress, focusing on embedded EEPROM technology</p>
-        <p>Year: 1989</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Award: “Best Component Innovation Award” from Semiconductor Industry Association (SIA)</p>
-        <p>Year: 1995</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Partnership: Approved memory supplier for Honeywell Aerospace and industrial control systems</p>
-        <p>Year: 2002</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Certification: ISO9001 and ISO14001</p>
-        <p>Year: 2008</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Technical Breakthrough: Launched Ultra EEPROM series, low-power and 200-year data retention</p>
-        <p>Year: 2010</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Partnership: Cooperation with Mitsubishi Electric and Delta Electronics</p>
-        <p>Year: 2015</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Branch: Shenzhen R&D center established, Chinese brand “益华世科技” launched</p>
-        <p>Year: 2017</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Partnership: Official partner of Digi-Key and FindChips</p>
-        <p>Year: 2018</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Partnership: Collaborated with LCSC (立创电子)</p>
-        <p>Year: 2019</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Award & Technology: Recognized by Siemens & Bosch; launched Ultra-Secure EEPROM with AES and ChaCha20 encryption</p>
-        <p>Year: 2021-2024</p>
-    </div>
-</div>
+<section id="events-en">
+    <div class="event"><h3>EVASH</h3><p>Founded: By engineers from Intel and Cypress, focusing on embedded EEPROM technology</p><p>Year: 1989</p></div>
+    <div class="event"><h3>EVASH</h3><p>Award: “Best Component Innovation Award” from Semiconductor Industry Association (SIA)</p><p>Year: 1995</p></div>
+    <div class="event"><h3>EVASH</h3><p>Partnership: Approved memory supplier for Honeywell Aerospace and industrial control systems</p><p>Year: 2002</p></div>
+    <div class="event"><h3>EVASH</h3><p>Certification: ISO9001 and ISO14001</p><p>Year: 2008</p></div>
+    <div class="event"><h3>EVASH</h3><p>Technical Breakthrough: Launched Ultra EEPROM series, low-power and 200-year data retention</p><p>Year: 2010</p></div>
+    <div class="event"><h3>EVASH</h3><p>Partnership: Cooperation with Mitsubishi Electric and Delta Electronics</p><p>Year: 2015</p></div>
+    <div class="event"><h3>EVASH</h3><p>Branch: Shenzhen R&D center established, Chinese brand “益华世科技” launched</p><p>Year: 2017</p></div>
+    <div class="event"><h3>EVASH</h3><p>Partnership: Official partner of Digi-Key and FindChips</p><p>Year: 2018</p></div>
+    <div class="event"><h3>EVASH</h3><p>Partnership: Collaborated with LCSC (立创电子)</p><p>Year: 2019</p></div>
+    <div class="event"><h3>EVASH</h3><p>Award & Technology: Recognized by Siemens & Bosch; launched Ultra-Secure EEPROM with AES and ChaCha20 encryption</p><p>Year: 2021-2024</p></div>
+</section>
 
 <!-- Chinese Events -->
-<div id="events-cn" class="hidden">
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>创立：由来自 Intel 和 Cypress 的资深工程师创办，专注嵌入式 EEPROM 技术</p>
-        <p>时间：1989年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>奖项：获得美国半导体行业协会（SIA）“最佳组件创新奖”</p>
-        <p>时间：1995年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>合作：成为 Honeywell 航空与工业控制系统认可供应商</p>
-        <p>时间：2002年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>认证：通过 ISO9001 和 ISO14001 国际认证</p>
-        <p>时间：2008年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>技术突破：推出 Ultra EEPROM 系列，低功耗、200 年数据保持，获得 AEC-Q100 汽车电子认证</p>
-        <p>时间：2010年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>合作：与 Mitsubishi Electric 和 Delta Electronics 建立合作</p>
-        <p>时间：2015年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>分公司：成立深圳研发中心，中文品牌“益华世科技”正式启用</p>
-        <p>时间：2017年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>合作：成为 Digi-Key、FindChips 官方合作伙伴</p>
-        <p>时间：2018年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>合作：中国立创电子合作伙伴</p>
-        <p>时间：2019年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>奖项与技术：获西门子与博世年度优秀供应商，推出 Ultra-Secure EEPROM 支持 AES 和 ChaCha20 加密</p>
-        <p>时间：2021-2024年</p>
-    </div>
-</div>
+<section id="events-cn" class="hidden">
+    <div class="event"><h3>EVASH 益华世科技</h3><p>创立：由来自 Intel 和 Cypress 的资深工程师创办，专注嵌入式 EEPROM 技术</p><p>时间：1989年</p></div>
+    <div class="event"><h3>EVASH 益华世科技</h3><p>奖项：获得美国半导体行业协会（SIA）“最佳组件创新奖”</p><p>时间：1995年</p></div>
+    <div class="event"><h3>EVASH 益华世科技</h3><p>合作：成为 Honeywell 航空与工业控制系统认可供应商</p><p>时间：2002年</p></div>
+    <div class="event"><h3>EVASH 益华世科技</h3><p>认证：通过 ISO9001 和 ISO14001 国际认证</p><p>时间：2008年</p></div>
+    <div class="event"><h3>EVASH 益华世科技</h3><p>技术突破：推出 Ultra EEPROM 系列，低功耗、200 年数据保持，获得 AEC-Q100 汽车电子认证</p><p>时间：2010年</p></div>
+    <div class="event"><h3>EVASH 益华世科技</h3><p>合作：与 Mitsubishi Electric 和 Delta Electronics 建立合作</p><p>时间：2015年</p></div>
+    <div class="event"><h3>EVASH 益华世科技</h3><p>分公司：成立深圳研发中心，中文品牌“益华世科技”正式启用</p><p>时间：2017年</p></div>
+    <div class="event"><h3>EVASH 益华世科技</h3><p>合作：成为 Digi-Key、FindChips 官方合作伙伴</p><p>时间：2018年</p></div>
+    <div class="event"><h3>EVASH 益华世科技</h3><p>合作：中国立创电子合作伙伴</p><p>时间：2019年</p></div>
+    <div class="event"><h3>EVASH 益华世科技</h3><p>奖项与技术：获西门子与博世年度优秀供应商，推出 Ultra-Secure EEPROM 支持 AES 和 ChaCha20 加密</p><p>时间：2021-2024年</p></div>
+</section>
 
 <script>
-function showLang(lang) {
-    if(lang === 'en'){
+function showLang(lang){
+    if(lang==='en'){
         document.getElementById('brand-en').classList.remove('hidden');
         document.getElementById('brand-cn').classList.add('hidden');
         document.getElementById('events-en').classList.remove('hidden');
@@ -250,197 +141,6 @@ function showLang(lang) {
     } else {
         document.getElementById('brand-en').classList.add('hidden');
         document.getElementById('brand-cn').classList.remove('hidden');
-        document.getElementById('events-en').classList.add('hidden');
-        document.getElementById('events-cn').classList.remove('hidden');
-    }
-}
-</script>
-
-</body>
-</html>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EVASH | 益华世科技品牌事件</title>
-<style>
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f8fb;
-    color: #1a1a1a;
-}
-header {
-    background: #0d3b66;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-}
-header h1 {
-    margin: 10px 0;
-    font-size: 2rem;
-}
-header .lang-toggle {
-    margin-top: 10px;
-}
-header .lang-toggle button {
-    background: #fff;
-    color: #0d3b66;
-    border: none;
-    padding: 8px 15px;
-    margin: 0 5px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-weight: bold;
-}
-section.events {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-.event {
-    background: #fff;
-    padding: 15px 20px;
-    margin-bottom: 15px;
-    border-left: 5px solid #0d3b66;
-    border-radius: 4px;
-}
-.event h3 {
-    margin: 0 0 5px 0;
-    color: #0d3b66;
-}
-.event p {
-    margin: 3px 0;
-}
-.hidden { display: none; }
-</style>
-</head>
-<body>
-
-<header>
-    <h1>EVASH | 益华世科技品牌事件</h1>
-    <div class="lang-toggle">
-        <button onclick="showLang('en')">English</button>
-        <button onclick="showLang('cn')">中文</button>
-    </div>
-</header>
-
-<section class="events">
-
-<!-- 中文事件 -->
-<div id="events-cn">
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>创立：由来自 Intel 和 Cypress 的资深工程师创办，专注嵌入式 EEPROM 技术</p>
-        <p>时间：1989年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>奖项：获得美国半导体行业协会（SIA）“最佳组件创新奖”</p>
-        <p>时间：1995年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>合作：成为 Honeywell 航空与工业控制系统认可供应商</p>
-        <p>时间：2002年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>认证：通过 ISO9001 和 ISO14001 国际认证</p>
-        <p>时间：2008年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>技术突破：推出 Ultra EEPROM 系列，低功耗、200 年数据保持，获得 AEC-Q100 汽车电子认证</p>
-        <p>时间：2010年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>合作：与 Mitsubishi Electric 和 Delta Electronics 建立合作</p>
-        <p>时间：2015年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>分公司：成立深圳研发中心，中文品牌“益华世科技”正式启用</p>
-        <p>时间：2017年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>合作：成为 Digi-Key、FindChips 官方合作伙伴</p>
-        <p>时间：2018年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>合作：中国立创电子合作伙伴</p>
-        <p>时间：2019年</p>
-    </div>
-    <div class="event">
-        <h3>EVASH 益华世科技</h3>
-        <p>奖项与技术：获西门子与博世年度优秀供应商，推出 Ultra-Secure EEPROM 支持 AES 和 ChaCha20 加密</p>
-        <p>时间：2021-2024年</p>
-    </div>
-</div>
-
-<!-- 英文事件 -->
-<div id="events-en" class="hidden">
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Founded: By engineers from Intel and Cypress, focusing on embedded EEPROM technology</p>
-        <p>Year: 1989</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Award: “Best Component Innovation Award” from Semiconductor Industry Association (SIA)</p>
-        <p>Year: 1995</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Partnership: Approved memory supplier for Honeywell Aerospace and industrial control systems</p>
-        <p>Year: 2002</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Certification: ISO9001 and ISO14001</p>
-        <p>Year: 2008</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Technical Breakthrough: Launched Ultra EEPROM series, low-power and 200-year data retention</p>
-        <p>Year: 2010</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Partnership: Cooperation with Mitsubishi Electric and Delta Electronics</p>
-        <p>Year: 2015</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Branch: Shenzhen R&D center established, Chinese brand “益华世科技” launched</p>
-        <p>Year: 2017</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Partnership: Official partner of Digi-Key and FindChips</p>
-        <p>Year: 2018</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Partnership: Collaborated with LCSC (立创电子)</p>
-        <p>Year: 2019</p>
-    </div>
-    <div class="event">
-        <h3>EVASH</h3>
-        <p>Award & Technology: Recognized by Siemens & Bosch; launched Ultra-Secure EEPROM with AES and ChaCha20 encryption</p>
-        <p>Year: 2021-2024</p>
-    </div>
-</div>
-
-<script>
-function showLang(lang) {
-    if(lang === 'en'){
-        document.getElementById('events-en').classList.remove('hidden');
-        document.getElementById('events-cn').classList.add('hidden');
-    } else {
         document.getElementById('events-en').classList.add('hidden');
         document.getElementById('events-cn').classList.remove('hidden');
     }
