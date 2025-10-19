@@ -1,285 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EVASH Brand History | 益华世科技发展历程</title>
+<title>EVASH | 益华世科技品牌事件</title>
 <style>
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    padding: 0;
     background: #f4f8fb;
     color: #1a1a1a;
-    line-height: 1.6;
 }
 header {
     background: #0d3b66;
     color: #fff;
-    padding: 30px 20px;
+    padding: 40px 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 header h1 {
-    margin: 10px 0 0 0;
+    margin: 0;
     font-size: 2rem;
 }
-header img {
-    width: 100px;
-    height: auto;
-}
-header .lang-toggle {
-    margin-top: 10px;
-}
-header .lang-toggle button {
-    background: #fff;
-    color: #0d3b66;
-    border: none;
-    padding: 8px 15px;
-    margin: 0 5px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-weight: bold;
-}
-section.timeline {
-    position: relative;
-    max-width: 900px;
-    margin: 50px auto;
+section.events {
+    max-width: 800px;
+    margin: 40px auto;
     padding: 0 20px;
 }
-section.timeline::after {
-    content: '';
-    position: absolute;
-    width: 4px;
-    background-color: #0d3b66;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -2px;
+.events ul {
+    list-style-type: decimal;
+    padding-left: 20px;
 }
-.timeline-event {
-    padding: 20px 40px;
-    position: relative;
-    width: 50%;
-    opacity: 0;
-    transform: translateX(50px);
-    transition: all 0.6s ease-out;
-    display: flex;
-    align-items: flex-start;
+.events li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 1rem;
 }
-.timeline-event.visible {
-    opacity: 1;
-    transform: translateX(0);
-}
-.timeline-event.left { left: 0; }
-.timeline-event.right { left: 50%; }
-.timeline-event::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: -10px;
-    background-color: #0d3b66;
-    border: 4px solid #f4f8fb;
-    top: 25px;
-    border-radius: 50%;
-    z-index: 1;
-}
-.timeline-event.right::after { left: -10px; }
-.timeline-event img {
-    width: 60px;
-    height: 60px;
-    margin-right: 15px;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-.timeline-event img:hover {
-    transform: scale(1.2);
-}
-.timeline-event h3 {
-    margin-top: 0;
+.events li span.year {
+    font-weight: bold;
     color: #0d3b66;
+    margin-right: 8px;
 }
-.timeline-event p {
-    margin: 5px 0 0 0;
-}
-@media screen and (max-width: 768px) {
-    section.timeline::after { left: 20px; }
-    .timeline-event {
-        width: 100%;
-        padding-left: 60px;
-        padding-right: 20px;
-        margin-bottom: 30px;
-        flex-direction: row;
-        transform: translateX(0);
-    }
-    .timeline-event.right { left: 0; }
-    .timeline-event::after { left: 20px; }
-}
-.hidden { display: none; }
 </style>
 </head>
 <body>
 
 <header>
-    <img src="https://via.placeholder.com/100x50?text=EVASH+Logo" alt="EVASH Logo">
-    <h1>EVASH Brand History | 益华世科技发展历程</h1>
-    <div class="lang-toggle">
-        <button onclick="showLang('en')">English</button>
-        <button onclick="showLang('cn')">中文</button>
-    </div>
+    <h1>EVASH | 益华世科技品牌事件</h1>
 </header>
 
-<section class="timeline">
-
-<!-- English Timeline -->
-<div id="timeline-en">
-    <div class="timeline-event left">
-        <img src="https://via.placeholder.com/60?text=EVASH" alt="EVASH Logo">
-        <div>
-            <h3>1989 · Silicon Valley, California</h3>
-            <p>EVASH was founded by engineers from Intel and Cypress, focusing on embedded EEPROM and floating-gate process development. Filed first U.S. patent for low-voltage data retention.</p>
-        </div>
-    </div>
-    <div class="timeline-event right">
-        <img src="https://via.placeholder.com/60?text=Award" alt="Award">
-        <div>
-            <h3>1995 · Industry Recognition</h3>
-            <p>Received the “Best Component Innovation Award” from the Semiconductor Industry Association (SIA) for its 5V EEPROM design, setting new reliability standards.</p>
-        </div>
-    </div>
-    <div class="timeline-event left">
-        <img src="https://via.placeholder.com/60?text=Partner" alt="Partner">
-        <div>
-            <h3>2002 · Partnership with Honeywell</h3>
-            <p>Became an approved memory supplier for Honeywell Aerospace, entering industrial control and aerospace electronics.</p>
-        </div>
-    </div>
-    <div class="timeline-event right">
-        <img src="https://via.placeholder.com/60?text=ISO" alt="ISO Certification">
-        <div>
-            <h3>2008 · ISO Certifications</h3>
-            <p>Achieved ISO9001 and ISO14001 certifications for design and production management systems.</p>
-        </div>
-    </div>
-    <div class="timeline-event left">
-        <img src="https://via.placeholder.com/60?text=Chip" alt="EEPROM">
-        <div>
-            <h3>2010 · Low-Power EEPROM Breakthrough</h3>
-            <p>Launched Ultra-EEPROM Series, 0.3mA write current, 200-year data retention, certified under AEC-Q100 Grade 1.</p>
-        </div>
-    </div>
-    <div class="timeline-event right">
-        <img src="https://via.placeholder.com/60?text=Asia" alt="Asia Partnership">
-        <div>
-            <h3>2015 · Asia Partnership Expansion</h3>
-            <p>Partnered with Mitsubishi Electric and Delta Electronics, joined SEMI and IEEE.</p>
-        </div>
-    </div>
-    <div class="timeline-event left">
-        <img src="https://via.placeholder.com/60?text=R&D" alt="R&D Center">
-        <div>
-            <h3>2017 · Establish Shenzhen R&D</h3>
-            <p>Founded EVASH Technology (Shenzhen) Co., Ltd., launched Chinese brand name “益华世科技” for Asia-Pacific market.</p>
-        </div>
-    </div>
-    <div class="timeline-event right">
-        <img src="https://via.placeholder.com/60?text=Secure" alt="Secure">
-        <div>
-            <h3>2021-2024 · Global Recognition & Secure IoT</h3>
-            <p>Honored by Siemens and Bosch as top supplier; launched Ultra-Secure EEPROM with AES and ChaCha20 encryption.</p>
-        </div>
-    </div>
-</div>
-
-<!-- Chinese Timeline -->
-<div id="timeline-cn" class="hidden">
-    <div class="timeline-event left">
-        <img src="https://via.placeholder.com/60?text=EVASH" alt="EVASH Logo">
-        <div>
-            <h3>1989年 · 美国加州硅谷</h3>
-            <p>EVASH 由来自 Intel 与 Cypress 的资深工程师团队创立，专注嵌入式 EEPROM 浮栅工艺技术，获得首项美国专利。</p>
-        </div>
-    </div>
-    <div class="timeline-event right">
-        <img src="https://via.placeholder.com/60?text=Award" alt="Award">
-        <div>
-            <h3>1995年 · 荣获行业大奖</h3>
-            <p>凭借5V浮栅EEPROM设计，获得美国半导体行业协会（SIA）“最佳组件创新奖”。</p>
-        </div>
-    </div>
-    <div class="timeline-event left">
-        <img src="https://via.placeholder.com/60?text=Partner" alt="Partner">
-        <div>
-            <h3>2002年 · 霍尼韦尔合作</h3>
-            <p>成为 Honeywell 航空与工业控制系统认可供应商，正式进入高可靠电子控制领域。</p>
-        </div>
-    </div>
-    <div class="timeline-event right">
-        <img src="https://via.placeholder.com/60?text=ISO" alt="ISO Certification">
-        <div>
-            <h3>2008年 · ISO体系认证</h3>
-            <p>通过 ISO9001 与 ISO14001 国际认证，保证设计与生产体系高质量标准。</p>
-        </div>
-    </div>
-    <div class="timeline-event left">
-        <img src="https://via.placeholder.com/60?text=Chip" alt="EEPROM">
-        <div>
-            <h3>2010年 · 低功耗 EEPROM 技术突破</h3>
-            <p>发布 Ultra EEPROM 系列，典型写入电流0.3mA，数据保持200年，通过 AEC-Q100 汽车电子认证。</p>
-        </div>
-    </div>
-    <div class="timeline-event right">
-        <img src="https://via.placeholder.com/60?text=Asia" alt="Asia Partnership">
-        <div>
-            <h3>2015年 · 亚洲合作拓展</h3>
-            <p>与三菱电机、台达电子建立合作，加入 SEMI 与 IEEE。</p>
-        </div>
-    </div>
-    <div class="timeline-event left">
-        <img src="https://via.placeholder.com/60?text=R&D" alt="R&D Center">
-        <div>
-            <h3>2017年 · 深圳研发中心成立</h3>
-            <p>成立益华世科技（深圳）有限公司，推出中文品牌“益华世科技”，服务亚太市场。</p>
-        </div>
-    </div>
-    <div class="timeline-event right">
-        <img src="https://via.placeholder.com/60?text=Secure" alt="Secure">
-        <div>
-            <h3>2021-2024年 · 全球认可与安全存储</h3>
-            <p>获西门子与博世年度杰出供应商，推出 Ultra-Secure EEPROM 系列，集成 AES 与 ChaCha20 加密算法。</p>
-        </div>
-    </div>
-</div>
-
+<section class="events">
+    <ul>
+        <li><span class="year">1989</span>EVASH 在美国硅谷成立，由 Intel 和 Cypress 的资深工程师创办，专注嵌入式 EEPROM 技术。</li>
+        <li><span class="year">1995</span>获得美国半导体行业协会（SIA）“最佳组件创新奖”，提升国际知名度。</li>
+        <li><span class="year">2002</span>成为 Honeywell 航空与工业控制系统认可供应商，进入高可靠电子控制领域。</li>
+        <li><span class="year">2008</span>通过 ISO9001 和 ISO14001 国际认证，保证设计与生产体系质量。</li>
+        <li><span class="year">2010</span>推出 Ultra EEPROM 系列，低功耗、200 年数据保持，获得 AEC-Q100 汽车电子认证。</li>
+        <li><span class="year">2015</span>与 Mitsubishi Electric 和 Delta Electronics 建立合作，加入 SEMI 与 IEEE。</li>
+        <li><span class="year">2017</span>成立 EVASH Technology（深圳）有限公司，中文品牌名“益华世科技”正式启用。</li>
+        <li><span class="year">2018</span>成为 Digi-Key、FindChips 的官方合作伙伴，产品全球可采购。</li>
+        <li><span class="year">2019</span>与中国立创合作，扩大国内电子市场影响力。</li>
+        <li><span class="year">2021-2024</span>获西门子与博世年度优秀供应商，推出 Ultra-Secure EEPROM，支持 AES 和 ChaCha20 加密。</li>
+    </ul>
 </section>
-
-<script>
-function showLang(lang) {
-    if(lang==='en'){
-        document.getElementById('timeline-en').classList.remove('hidden');
-        document.getElementById('timeline-cn').classList.add('hidden');
-    } else {
-        document.getElementById('timeline-en').classList.add('hidden');
-        document.getElementById('timeline-cn').classList.remove('hidden');
-    }
-}
-
-function scrollTimeline() {
-    const events = document.querySelectorAll('.timeline-event');
-    const triggerBottom = window.innerHeight * 0.85;
-    events.forEach(event => {
-        const top = event.getBoundingClientRect().top;
-        if(top < triggerBottom){
-            event.classList.add('visible');
-        }
-    });
-}
-
-window.addEventListener('scroll', scrollTimeline);
-window.addEventListener('load', scrollTimeline);
-</script>
 
 </body>
 </html>
